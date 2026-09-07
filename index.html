@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Itinerary Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AI Travel Itinerary Planner</h1>
+    </header>
+
+    <main>
+        <div class="form-box">
+            <input type="text" id="destination" placeholder="Destination... e.g. Kyoto, Japan">
+            <input type="number" id="days" placeholder="Number of days" min="1" max="30">
+
+            <select id="budget">
+                <option value="Budget">Budget</option>
+                <option value="Mid-range" selected>Mid-range</option>
+                <option value="Luxury">Luxury</option>
+            </select>
+
+            <select id="pace">
+                <option value="Relaxed">Relaxed</option>
+                <option value="Balanced" selected>Balanced</option>
+                <option value="Packed">Packed</option>
+            </select>
+
+            <div class="interests">
+                <label><input type="checkbox" value="food"> Food</label>
+                <label><input type="checkbox" value="history"> History</label>
+                <label><input type="checkbox" value="nature"> Nature</label>
+                <label><input type="checkbox" value="adventure"> Adventure</label>
+                <label><input type="checkbox" value="nightlife"> Nightlife</label>
+                <label><input type="checkbox" value="shopping"> Shopping</label>
+                <label><input type="checkbox" value="relaxation"> Relaxation</label>
+            </div>
+
+            <button id="generate-btn">Generate Itinerary</button>
+        </div>
+
+        <div id="status"></div>
+
+        <div id="results"></div>
+
+        <h2>Saved Trips</h2>
+        <div id="saved-results"></div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
